@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Let's be near each other always, Tanya, do you agree??</title>
+    <style>
+        #question {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: pink;
+        }
+
+        #answer-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .answer-button {
+            font-size: 24px;
+            margin: 5px;
+            color: blue;
+        }
+
+        #result {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="question">Let's be near each other always, Tanya, do you agree?</div>
+    <div id="answer-container">
+        <button class="answer-button" onclick="handleAnswer('Yes')">Yes</button>
+        <button class="answer-button" onclick="handleAnswer('No')">No</button>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        var result = document.getElementById('result');
+
+        function handleAnswer(answer) {
+            if (answer === 'No') {
+                result.innerText = "Натиски  Yes, тому що натиснувши No нічого не побачиш.";
+            } else {
+                result.innerText = "Я дуже тебе люблю. Ти не уявляєш, як сильно я радий, що ти у мене є. Із тобою я відчув те, що ніколи не відчував. Я дуже радий, що ти зробила мене таким щасливим, Танюшка. У нас із тобою було багато різних проблем і негараздів, але ми все одно разом. Я впевнений, що у нас зараз такий період, що просто тобі не хочеться зі мною багато часу проводити, але ми це пройдемо, не переживай. Може зробимо боляче один одному, але, щоб не було, я хочу проводити свій час із тобою. I love you";
+            }
+        }
+    </script>
+</body>
+</html>
